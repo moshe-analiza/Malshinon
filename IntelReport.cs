@@ -9,16 +9,16 @@ namespace Malshinon
 {
     internal class IntelReport
     {
-        int reporeterId { get; set; }
-        int targetId { get; set; }
-        DateTime reportDate { get; set; }
-        string reportText { get; set; }
+        public int reporeterId { get; set; }
+        public int targetId { get; set; }
+        public DateTime reportDate { get; set; }
+        public string reportText { get; set; }
         public override string ToString()
         {
-            return $"reporeterId: {reporeterId}" +
-                $"targetId: {targetId}" +
-                $"reportDate: {reportDate}" +
-                $"reportText: {reportText}";
+            return $"reporeterId: {reporeterId}\n" +
+                $"targetId: {targetId}\n" +
+                $"reportDate: {reportDate}\n" +
+                $"reportText: {reportText}\n";
         }
     }
 }

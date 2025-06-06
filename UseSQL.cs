@@ -55,6 +55,7 @@ namespace Data
             {
                 using (var connection = new MySqlConnection(connstring))
                 {
+                    
                     connection.Open();
                     using (var cmd = new MySqlCommand(query, connection))
                     using (var reader = cmd.ExecuteReader())
